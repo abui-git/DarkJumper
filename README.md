@@ -180,5 +180,4 @@ Proyek ini untuk tujuan edukasi dan audit keamanan yang sah.
 
 Kontributor
 Original: mywisdom & gunslinger_ (2007–2010)
-
-Update by ABUI (2026)
+recoding Update by ABUI (2026)
