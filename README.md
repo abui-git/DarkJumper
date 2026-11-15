@@ -87,13 +87,16 @@ Port & Service
 bash
 python3 darkjumper.py -t scanme.nmap.org -m portscan -r 20-100 --no-reverse -v
 python3 darkjumper.py -t scanme.nmap.org -m daemoninfo --no-reverse -v
+
 Panel Admin & CGI
 bash
 python3 darkjumper.py -t example.com -m scanadminpath --no-reverse -v
 python3 darkjumper.py -t example.com -m cgidirs --no-reverse -v
+
 Reverse IP
 bash
 python3 darkjumper.py -t example.com -m reverseonly -v
+
 SQLi Detection (DVWA)
 bash
 # Low — error-based + blind
@@ -107,12 +110,14 @@ python3 darkjumper.py -t "localhost:8080/vulnerabilities/sqli/?id=1&Submit=Submi
     --login-url http://localhost:8080/login.php \
     --login-user admin --login-pass password \
     --security medium --delay 0.5 -v
+
 LFI Detection (DVWA)
 bash
 python3 darkjumper.py -t "localhost:8080/vulnerabilities/fi/?page=1" -m inclusion --no-reverse \
     --login-url http://localhost:8080/login.php \
     --login-user admin --login-pass password \
     --security medium --delay 0.5 -v
+
 Eksploitasi sqlmap
 bash
 python3 darkjumper.py -t "localhost:8080/vulnerabilities/sqli/?id=1&Submit=Submit" -m injection --no-reverse \
@@ -126,7 +131,7 @@ export DARKJUMPER_AI_KEY="gsk_..."
 python3 darkjumper.py -t "target" -m injection --no-reverse \
     --ai-verify --ai-provider groq --ai-model openai/gpt-oss-20b -v
 
-# DeepSeek (murah)
+# DeepSeek 
 export DARKJUMPER_AI_KEY="sk-..."
 python3 darkjumper.py -t "target" -m injection --no-reverse \
     --ai-verify --ai-provider deepseek --ai-model deepseek-chat -v
@@ -136,14 +141,6 @@ ollama pull qwen2.5-coder:0.5b
 python3 darkjumper.py -t "target" -m injection --no-reverse \
     --ai-verify --ai-provider ollama --ai-model qwen2.5-coder:0.5b \
     --ai-base-url http://localhost:11434/v1 -v
-Output
-File	Isi
-reports/findings.json	Array temuan (JSON)
-reports/findings.csv	CSV temuan
-reports/findings.sarif	SARIF (CI/CD)
-logs/darkjumper.jsonl	Log terstruktur (JSON lines)
-logs/darkjumper.log	Log teks
-logs/sqlmap_output/	Output sqlmap
 
 Batasan
 HackerTarget — 50 query/hari
