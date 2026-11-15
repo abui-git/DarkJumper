@@ -144,28 +144,7 @@ reports/findings.sarif	SARIF (CI/CD)
 logs/darkjumper.jsonl	Log terstruktur (JSON lines)
 logs/darkjumper.log	Log teks
 logs/sqlmap_output/	Output sqlmap
-Struktur Proyek
-text
-darkjumper/
-├── darkjumper.py              # Entry point (CLI)
-├── core/                      # Core engine
-│   ├── logger.py              # Logging terstruktur
-│   ├── http_client.py         # HTTP client (retry, WAF, tech)
-│   ├── findings.py            # Findings (JSON/CSV/SARIF)
-│   ├── scanner.py             # Orchestrator
-│   └── ai_verifier.py         # AI verification
-├── modules/                   # Modul scanning
-│   ├── adminpath.py
-│   ├── darkcgi.py
-│   ├── daemoninfo.py
-│   ├── devilzc0de.py
-│   ├── ftpbrute.py
-│   └── subscan.py
-├── config/
-│   └── var.py                 # Konfigurasi
-├── data/                      # Wordlist & hasil
-├── logs/                      # Log
-└── reports/                   # Output report
+
 Batasan
 HackerTarget — 50 query/hari
 
