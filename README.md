@@ -7,6 +7,15 @@ Web Vulnerability Scanner dengan **AI verification**, **SQLi/LFI detection**,
 
 ---
 
+## Demo
+
+![SQLi Detection](docs/demo-sqli.png)
+
+---
+
+
+---
+
 ## Fitur
 
 ### 13 Mode Scanning
