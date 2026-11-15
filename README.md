@@ -1,4 +1,4 @@
-# Darkjumper v5.7 — Professional + AI
+# Darkjumper v6.0 — Professional + AI
 
 Web Vulnerability Scanner dengan **AI verification**, **SQLi/LFI detection**,
 **auto-login**, **sqlmap integration**, dan **output SARIF** untuk CI/CD.
