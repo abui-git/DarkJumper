@@ -3,9 +3,9 @@ import os
 import random
 import time
 
-__developer__ = "mywisdom & gunslinger_"
-__version__ = "5.7"
-__date__ = "Wednesday, 24 Feb 2010 $ 9:13 PM"
+__developer__ = "_mywisdom & gunslinger_Abui"
+__version__ = "6"
+__date__ = "monday, 16 Nov 2026 $ 9:13 PM"
 
 # ---------------------------------------------------------------
 # Configuration
