@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Output & data runtime (jangan commit hasil scan)
+logs/
+reports/
+data/reverse.txt
+data/subpage.txt
+data/darkjumperlog.txt
+*.log
+*.jsonl
+*.sarif
+
+# Data konfigurasi (tetap commit)
+!data/cgilist.txt
+!data/wordlist.txt
+
+# API key & secrets
+.env
+.env.*
+*.key
+secrets.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# File log di data/
+data/darkjumperlog.txt
+data/*.log
+
+# Proyek lain (bukan Darkjumper)
+app.py

@@ -1,0 +1,4 @@
+cgi-bin/script.pl
+cgi-bin/admin.cgi
+cgi-bin/login.pl
+cgi-bin/test.cgi
